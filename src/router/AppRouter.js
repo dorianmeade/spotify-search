@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import App from '../App'
 import { Redirect } from '../components/Redirect'
-import { Dashboard } from '../components/Dashboard'
+import Dashboard  from '../components/Dashboard'
 
 const AppRouter = () => {
     return (

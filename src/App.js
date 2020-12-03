@@ -1,4 +1,5 @@
 import React from 'react'
+import { connect } from 'react-redux';
 
 import {LoginButton} from './components/LoginButton'
 
@@ -11,4 +12,4 @@ function App() {
   );
 }
 
-export default App;
+export default connect()(App);

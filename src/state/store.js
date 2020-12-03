@@ -7,7 +7,7 @@ import albumReducer from '../reducers/albums'
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 // sets global state
-const store = createStore(
+export const store = createStore(
     combineReducers({
         albums: albumReducer, 
         artists: artistsReducer
@@ -15,4 +15,3 @@ const store = createStore(
     composeEnhancers(applyMiddleware(thunk))
 );
 
-export default store;
